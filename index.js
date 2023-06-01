@@ -17,9 +17,10 @@ document.getElementById('search-btn').addEventListener('click', function(){
       .then(response =>  response.json())
       .then(data => {
         console.log(data)
+        let year = data.created_at
         imageContainer.innerHTML = `<img class='profile-img' src="${data.avatar_url}" alt='avatar'/>`
         username.textContent = data.login
         at.textContent = '@' + data.name
-        joined.textContent = "Joined " + data.created_at.slice(0,4)
+        joined.textContent = "Joined " + year.slice(0,4)
       })
 })
