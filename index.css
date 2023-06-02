@@ -138,4 +138,56 @@ main {
     width: 80%;
     margin: auto;
     margin-top: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#user-bio{
+    min-height: 4rem;
+    margin-left: 0.4rem;
+}
+#follower-container > div > p{
+    color: #4B6A9B;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+}
+#follower-container > div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+}
+#follower-container > div > h3 {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2B3442;
+}
+#social-media-container > div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+#social-media-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 0.5rem;
+}
+#social-media-container > div > p{
+    font-weight: 400;
+    font-size: 13px;
+    color: #4B6A9B;
+}
+#social-media-container > div > p > a{
+    font-weight: 400;
+    font-size: 13px;
 }
